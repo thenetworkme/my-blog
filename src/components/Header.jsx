@@ -23,7 +23,7 @@ export default function Header() {
         </div>
       </div>
       <div className={style.modeContainer}>
-        <img src="../public/brightness.png" className={style.lightMode} />
+        <img src="/images/brightness.png" className={style.lightMode} />
       </div>
     </header>
   );
