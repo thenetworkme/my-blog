@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className={style.header}>
       <div className={style.nav}>
-        <img src="/public/logo2.png" className={style.logo} />
+        <img src="/public/images/logo2.png" className={style.logo} />
         <div>
           <h4 className={style.title}>RayDev</h4>
           <nav>
