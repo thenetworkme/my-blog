@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Rubik+Marker+Hatch&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code";
+}
+main {
+  display: block; /* Cambiar a bloque para que no sea un contenedor flex */
+  margin: auto; /* Establecer margen automático para centrar */
+  max-width: 800px;
+  position: relative;
+  top: 30px;
+  padding: 0 1.4em;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.buggo {
+  font-family: "Rubik Marker Hatch", system-ui !important;
+  color: rgb(104, 98, 192);
+}

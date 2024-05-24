@@ -1,0 +1,31 @@
+.content {
+  margin-top: 50px;
+}
+.span {
+  color: rgb(104, 98, 192);
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 20px;
+  display: inline-block;
+}
+.p {
+  margin-top: 15px;
+}
+.li {
+  list-style: none;
+}
+.a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: black;
+}
+.ul {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+.techInfo {
+  margin-top: 50px;
+}
