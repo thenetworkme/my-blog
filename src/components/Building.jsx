@@ -1,10 +1,7 @@
-export default function Building() {
+export default function Building({ img }) {
   return (
     <>
-      <img
-        src="/images/wait.png"
-        style={{ maxWidth: "100%", minWidth: "40%" }}
-      />
+      <img src={img} className="building" />
     </>
   );
 }

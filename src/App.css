@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Fira Code";
 }
+
 main {
   display: block; /* Cambiar a bloque para que no sea un contenedor flex */
   margin: auto; /* Establecer margen automático para centrar */
@@ -15,15 +16,43 @@ main {
   padding: 0 1.4em;
 }
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  left: 0;
   width: 100%;
   padding: 15px;
   text-align: center;
+
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer > div {
   font-weight: 600;
 }
 .buggo {
   font-family: "Rubik Marker Hatch", system-ui !important;
   color: rgb(104, 98, 192);
+}
+.building {
+  max-width: 100%;
+  min-width: 40%;
+  filter: grayscale(100%);
+  animation: removeGrayscale 10s ease-in-out infinite;
+}
+
+@keyframes removeGrayscale {
+  0% {
+    filter: grayscale(100%);
+    transform: scale(0.4);
+  }
+  50% {
+    filter: grayscale(0%);
+    transform: scale(0.9);
+  }
+  100% {
+    filter: grayscale(100%);
+    transform: scale(0.4);
+  }
 }

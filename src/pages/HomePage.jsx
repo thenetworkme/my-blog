@@ -6,11 +6,12 @@ import Header from "../components/Header";
 export default function HomePage() {
   return (
     <main>
-      <Header />
+      <Header img={"/images/logo2.png"} />
 
       <Content />
+
+      <Building img={"/images/wait.png"} />
       <Footer />
-      <Building />
     </main>
   );
 }

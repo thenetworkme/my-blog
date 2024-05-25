@@ -1,25 +1,14 @@
-import { NavLink } from "react-router-dom";
 import style from "./Header.module.css";
+import NavBar from "../components/NavBar";
 
-export default function Header() {
+export default function Header({ img }) {
   return (
     <header className={style.header}>
       <div className={style.nav}>
-        <img src="/images/logo2.png" className={style.logo} />
+        <img src={img} className={style.logo} />
         <div>
           <h4 className={style.title}>RayDev</h4>
-          <nav>
-            <ul className={style.ul}>
-              <li className={style.li}>
-                <NavLink to="/" className={style.a}>
-                  Home
-                </NavLink>
-                <NavLink to="/sobre" className={style.a}>
-                  Sobre mi
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+          <NavBar />
         </div>
       </div>
       <div className={style.modeContainer}>
