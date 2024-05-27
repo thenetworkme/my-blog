@@ -6,9 +6,10 @@ export default function Content() {
     <div className={style.content}>
       <h4>{`> Hello World!!`}</h4>
       <p className={style.p}>
-        Hola, soy Ray Dev. No colocaré mi nombre completo en esta página por
-        motivos de privacidad. He creado esta página web como parte del
-        portafolio necesario para aplicar al equipo{" "}
+        Hola, soy RayDev. No colocaré mi nombre completo en esta página por
+        motivos de privacidad <b> (Podrán ver toda mi información en el CV)</b>.
+        He creado esta página web como parte del portafolio necesario para
+        aplicar al equipo{" "}
         <span style={{ color: "rgb(194, 75, 75)", fontWeight: "600" }}>
           Apolo27
         </span>{" "}
@@ -52,6 +53,19 @@ export default function Content() {
               Vercel
             </a>
             : Plataforma en la nube para desplegar sitios web estáticos.
+          </li>
+          <li className={style.li}>
+            <a href="" className={style.a}>
+              npm
+            </a>
+            : Gestor de paquetes oficial del framework de código abierto
+            Node.js.
+          </li>
+          <li className={style.li}>
+            <a href="" className={style.a}>
+              Material UI
+            </a>
+            : Biblioteca de componentes de interfaz de usuario para React.
           </li>
         </ul>
       </section>

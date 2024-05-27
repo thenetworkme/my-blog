@@ -60,3 +60,28 @@
   justify-content: space-around;
   gap: 10px;
 }
+.mouseOverText {
+  position: absolute;
+  top: 0;
+  left: 100;
+  transform: translate(-30%, -50%) rotate(-25deg);
+  font-size: 10px;
+  color: white;
+  background-color: rgba(179, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0.8;
+  z-index: 1000;
+  animation: bubble 3s infinite;
+}
+@keyframes bubble {
+  0% {
+    transform: translate(-30%, -60%) rotate(-25deg);
+  }
+  50% {
+    transform: translate(-30%, -40%) rotate(-25deg);
+  }
+  100% {
+    transform: translate(-30%, -60%) rotate(-25deg);
+  }
+}
