@@ -81,3 +81,12 @@ footer > div {
     transform: scale(0.4);
   }
 }
+.pContent2 > p {
+  margin: 15px 0;
+}
+.infoContent2 {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -38,32 +38,35 @@ export default function Content() {
         <h4>Tecnologías utilizadas en esta página</h4>
         <ul className={style.ul}>
           <li className={style.li}>
-            <a href="" className={style.a}>
+            <a href="https://react.dev/" className={style.a}>
               React
             </a>
             : Biblioteca JS para construir interfaces de usuario.
           </li>
           <li className={style.li}>
-            <a href="" className={style.a}>
-              Github
+            <a href="https://git-scm.com/" className={style.a}>
+              Git
             </a>
             : Software de control de versiones.
           </li>
           <li className={style.li}>
-            <a href="" className={style.a}>
+            <a
+              href="https://vercel.com/bugnetworks-projects"
+              className={style.a}
+            >
               Vercel
             </a>
             : Plataforma en la nube para desplegar sitios web estáticos.
           </li>
           <li className={style.li}>
-            <a href="" className={style.a}>
+            <a href="https://www.npmjs.com/" className={style.a}>
               npm
             </a>
             : Gestor de paquetes oficial del framework de código abierto
             Node.js.
           </li>
           <li className={style.li}>
-            <a href="" className={style.a}>
+            <a href="https://mui.com/" className={style.a}>
               Material UI
             </a>
             : Biblioteca de componentes de interfaz de usuario para React.
