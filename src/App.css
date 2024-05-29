@@ -84,6 +84,12 @@ footer > div {
 .pContent2 > p {
   margin: 15px 0;
 }
+.pContent2 > p > span {
+  font-weight: 600;
+  font-size: 19px;
+  color: rgb(41, 158, 148);
+  line-height: 1;
+}
 .infoContent2 {
   height: 200px;
   display: flex;
