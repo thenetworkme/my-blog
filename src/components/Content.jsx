@@ -1,15 +1,15 @@
 import style from "./Content.module.css";
 import { Typewriter } from "react-simple-typewriter";
+import Posts from "./Posts";
 
 export default function Content() {
   return (
     <div className={style.content}>
       <h4>{`> Hello World!!`}</h4>
       <p className={style.p}>
-        Hola, soy RayDev. No colocaré mi nombre completo en esta página por
-        motivos de privacidad <b> (Podrán ver toda mi información en el CV)</b>.
-        He creado esta página web como parte del portafolio necesario para
-        aplicar al equipo{" "}
+        Hola, soy Rayner Rodríguez.{" "}
+        <b> (Podrán ver toda mi información en el CV)</b>. He creado esta página
+        web como parte del portafolio necesario para aplicar al equipo{" "}
         <span style={{ color: "rgb(194, 75, 75)", fontWeight: "600" }}>
           Apolo27
         </span>{" "}
@@ -33,6 +33,7 @@ export default function Content() {
           delaySpeed={1000}
         />
       </span>
+      <Posts />
       <section className={style.techInfo}>
         <h4>Tecnologías utilizadas en esta página</h4>
         <ul className={style.ul}>

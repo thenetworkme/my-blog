@@ -41,7 +41,32 @@ footer > div {
   filter: grayscale(100%);
   animation: removeGrayscale 10s ease-in-out infinite;
 }
+.noLink {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid rgb(197, 197, 197);
+  display: inline-block;
+  line-height: 1;
+}
+.noLink:hover {
+  border-bottom: 2px solid rgb(214, 94, 144);
+}
+.today {
+  font-size: 14px;
+  margin-right: 16px;
+}
+.posts {
+  margin-top: 25px;
+}
+.posts > h4 {
+  margin-bottom: 16px;
+}
+.post {
+  margin: 10px 0px;
+  display: flex;
 
+  align-items: center;
+}
 @keyframes removeGrayscale {
   0% {
     filter: grayscale(100%);
@@ -49,7 +74,7 @@ footer > div {
   }
   50% {
     filter: grayscale(0%);
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
   100% {
     filter: grayscale(100%);

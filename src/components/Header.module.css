@@ -74,6 +74,11 @@
   z-index: 1000;
   animation: bubble 3s infinite;
 }
+@media (max-width: 600px) {
+  .mouseOverText {
+    display: none;
+  }
+}
 @keyframes bubble {
   0% {
     transform: translate(-30%, -60%) rotate(-25deg);

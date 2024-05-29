@@ -1,10 +1,11 @@
 import style from "./Content.module.css";
 import { Typewriter } from "react-simple-typewriter";
+import { Alert } from "@mui/material";
 
 export default function Content() {
   return (
     <div className={style.content}>
-      <h4>{`> Conoce un poco mas sobre mi `}</h4>
+      <h4>{`> Conoce un poco más sobre mí `}</h4>
       <p className={style.p}>
         Hola, soy Ray Dev. No colocaré mi nombre completo en esta página por
         motivos de privacidad. He creado esta página web como parte del
@@ -33,6 +34,10 @@ export default function Content() {
         />
       </span>
       <section></section>
+      <Alert variant="filled" severity="error">
+        Todos los proyectos fueron creados durante el periodo de aplicación al
+        equipo de Apolo 27.
+      </Alert>
     </div>
   );
 }
