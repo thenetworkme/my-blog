@@ -71,7 +71,7 @@ export default function Content() {
             "App React creada para entretener a las personas interesadas por la ciencia. Debes probarte a ti mismo adivinando la frase dicha por tu científico preferido."
           }
           textButton={"Ver más"}
-          link={""}
+          link={"https://ciencia-quiz.vercel.app/"}
         />
         <Cards
           title={"Ciencias frases"}
