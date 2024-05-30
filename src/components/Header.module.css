@@ -78,6 +78,12 @@
   .mouseOverText {
     display: none;
   }
+  .logo {
+    filter: grayscale(0%);
+  }
+  .title {
+    color: rgb(104, 98, 192);
+  }
 }
 @keyframes bubble {
   0% {
