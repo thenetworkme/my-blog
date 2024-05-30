@@ -76,7 +76,7 @@ export default function Content() {
         <Cards
           title={"Ciencias frases"}
           text={
-            "Simple API para obtener frases de ciencias dichas por los grandes cientificos de la historia de la humanidad. (Utilizada para el Quiz científico). API Desplegada en Render."
+            "Simple API para obtener frases de ciencias dichas por los grandes científicos de la historia de la humanidad. (Utilizada para el Quiz científico). API Desplegada en Render."
           }
           textButton={"Ver más"}
           link={"https://cienciafrases.onrender.com/"}
@@ -84,6 +84,11 @@ export default function Content() {
       </section>
       <section className="infoContent2">
         <Alert variant="filled" severity="error">
+          La API fue desplegada con el plan gratuito de Render, por lo que
+          podría presentar una latencia muy alta y tomar más tiempo para cargar.
+        </Alert>
+
+        <Alert variant="filled" severity="warning">
           Todos los proyectos fueron creados durante el periodo de aplicación al
           equipo de Apolo 27.
         </Alert>
