@@ -13,6 +13,7 @@ export default function Header({ img }) {
   const handleClose = () => {
     setOpen(false);
   };
+
   return (
     <header className={style.header}>
       <span className={style.mouseOverText}>mouse over</span>
@@ -34,3 +35,4 @@ export default function Header({ img }) {
     </header>
   );
 }
+//

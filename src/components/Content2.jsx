@@ -1,6 +1,7 @@
 import style from "./Content.module.css";
 import { Typewriter } from "react-simple-typewriter";
-import { Alert } from "@mui/material";
+import { Alert, Card } from "@mui/material";
+import Cards from "./Cards";
 
 export default function Content() {
   return (
@@ -63,8 +64,25 @@ export default function Content() {
           delaySpeed={1000}
         />
       </span>
+      <section className="cardWrapper">
+        <Cards
+          title={"Quiz científico"}
+          text={
+            "App React creada para entretener a las personas interesadas por la ciencia. Debes probarte a ti mismo adivinando la frase dicha por tu científico preferido."
+          }
+          textButton={"Ver más"}
+          link={""}
+        />
+        <Cards
+          title={"Ciencias frases"}
+          text={
+            "Simple API para obtener frases de ciencias dichas por los grandes cientificos de la historia de la humanidad. (Utilizada para el Quiz científico). API Desplegada en Render."
+          }
+          textButton={"Ver más"}
+          link={"https://cienciafrases.onrender.com/"}
+        />
+      </section>
       <section className="infoContent2">
-        {" "}
         <Alert variant="filled" severity="error">
           Todos los proyectos fueron creados durante el periodo de aplicación al
           equipo de Apolo 27.

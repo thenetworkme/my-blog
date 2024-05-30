@@ -1,20 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Rubik+Marker+Hatch&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Fira Code";
 }
-
+.dark {
+  background-color: black;
+  color: white;
+}
+.cards {
+  font-family: "Zilla Slab", serif !important;
+  color: white !important;
+}
+.cardsBtn {
+  color: rgb(255, 252, 252) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  font-family: "Zilla Slab", serif !important;
+  line-height: 1 !important;
+  border-bottom: 2px dashed rgb(197, 197, 197) !important;
+}
+.cardsBtn:hover {
+  border-bottom: 2px solid rgb(214, 94, 144) !important;
+}
+.cardWrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+.cardComp {
+  background-color: #7077a1 !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
+  color: white !important;
+}
 main {
-  display: block; /* Cambiar a bloque para que no sea un contenedor flex */
-  margin: auto; /* Establecer margen automático para centrar */
+  display: block;
+  margin: auto;
   max-width: 800px;
   position: relative;
   top: 30px;
   padding: 0 1.4em;
 }
+
 footer {
   position: relative;
   bottom: 0;
@@ -90,6 +123,7 @@ footer > div {
   color: rgb(41, 158, 148);
   line-height: 1;
 }
+
 .infoContent2 {
   height: 200px;
   display: flex;
