@@ -90,7 +90,7 @@ export default function Content() {
 
         <Alert variant="filled" severity="warning">
           Todos los proyectos fueron creados durante el periodo de aplicación al
-          equipo de Apolo 27.
+          equipo de Apolo 27, incluyendo esta página.
         </Alert>
       </section>
     </div>
