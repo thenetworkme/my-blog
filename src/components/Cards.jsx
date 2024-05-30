@@ -25,7 +25,7 @@ export default function Cards({ title, text, textButton, link }) {
           </Typography>
         </CardContent>
         <CardActions>
-          <a href={link}>
+          <a href={link} target="_blank">
             <Button size="small" className="cardsBtn">
               {textButton}
             </Button>
