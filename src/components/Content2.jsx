@@ -92,7 +92,7 @@ export default function Content() {
             "Aplicación de gestión de tiempo basada en la técnica Pomodoro, inspirada en pomofocus.io. Diseñada para mejorar la productividad y concentración mediante intervalos de trabajo y descanso estructurados."
           }
           textButton={"Ver más"}
-          link={"/"}
+          link={"https://efficio-pomodoro.vercel.app/"}
           fullWidth={true}
           icon={<TimerIcon />}
           bgColor={"#ffcdd2"}
