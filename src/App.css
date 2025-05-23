@@ -32,6 +32,16 @@
   align-items: center;
   justify-content: space-around;
   gap: 20px;
+}
+
+.fullWidth {
+  width: 100%;
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+
+.fullWidth .cardComp {
+  width: 100%;
   margin-bottom: 50px;
 }
 .cardComp {

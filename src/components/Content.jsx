@@ -13,7 +13,7 @@ export default function Content() {
         <span style={{ color: "rgb(194, 75, 75)", fontWeight: "600" }}>
           Apolo27
         </span>{" "}
-        del{" "}
+        del{" "}  
         <span
           style={{
             textTransform: "uppercase",

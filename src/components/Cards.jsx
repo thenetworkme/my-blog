@@ -5,12 +5,19 @@ import {
   CardActions,
   Button,
   CardHeader,
+  Box,
 } from "@mui/material";
 
-export default function Cards({ title, text, textButton, link }) {
+export default function Cards({ title, text, textButton, link, fullWidth, icon, bgColor }) {
   return (
-    <div>
-      <Card sx={{ maxWidth: 345 }} className="cardComp">
+    <div className={fullWidth ? "fullWidth" : ""}>
+      <Card 
+        sx={{ 
+          maxWidth: fullWidth ? "100%" : 345,
+          backgroundColor: bgColor || "#7077a1"
+        }} 
+        className="cardComp"
+      >
         <CardContent>
           <Typography
             gutterBottom
@@ -18,6 +25,7 @@ export default function Cards({ title, text, textButton, link }) {
             component="div"
             className="cards"
           >
+            {icon && <Box component="span" sx={{ mr: 1, verticalAlign: 'middle', display: 'inline-block' }}>{icon}</Box>}
             {title}
           </Typography>
           <Typography variant="body2" color="text.secondary" className="cards">

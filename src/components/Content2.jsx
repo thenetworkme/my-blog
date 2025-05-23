@@ -2,6 +2,9 @@ import style from "./Content.module.css";
 import { Typewriter } from "react-simple-typewriter";
 import { Alert, Card } from "@mui/material";
 import Cards from "./Cards";
+import QuizIcon from "@mui/icons-material/Quiz";
+import ApiIcon from "@mui/icons-material/Api";
+import TimerIcon from "@mui/icons-material/Timer";
 
 export default function Content() {
   return (
@@ -72,6 +75,7 @@ export default function Content() {
           }
           textButton={"Ver más"}
           link={"https://ciencia-quiz.vercel.app/"}
+          icon={<QuizIcon />}
         />
         <Cards
           title={"Ciencias frases"}
@@ -80,6 +84,18 @@ export default function Content() {
           }
           textButton={"Ver más"}
           link={"https://cienciafrases.onrender.com/"}
+          icon={<ApiIcon />}
+        />
+        <Cards
+          title={"Efficio"}
+          text={
+            "Aplicación de gestión de tiempo basada en la técnica Pomodoro, inspirada en pomofocus.io. Diseñada para mejorar la productividad y concentración mediante intervalos de trabajo y descanso estructurados."
+          }
+          textButton={"Ver más"}
+          link={"/"}
+          fullWidth={true}
+          icon={<TimerIcon />}
+          bgColor={"#ffcdd2"}
         />
       </section>
       <section className="infoContent2">
@@ -90,7 +106,7 @@ export default function Content() {
 
         <Alert variant="filled" severity="warning">
           Todos los proyectos fueron creados durante el periodo de aplicación al
-          equipo de Apolo 27, incluyendo esta página.
+          equipo de Apolo 27 2024 - 2025, incluyendo esta página.
         </Alert>
       </section>
     </div>
