@@ -17,6 +17,7 @@
   --title-hover: rgb(104, 98, 192);
   --buggo-color: rgb(104, 98, 192);
   --border-color: rgb(197, 197, 197);
+  --tech-link-color: #000000;
 }
 
 [data-theme="dark"] {
@@ -30,6 +31,7 @@
   --title-hover: rgb(188, 192, 197);
   --buggo-color: rgb(188, 192, 197);
   --border-color: rgb(197, 197, 197);
+  --tech-link-color: #d1c4e9;
 }
 
 .dark-theme {
