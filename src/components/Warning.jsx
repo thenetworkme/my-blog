@@ -11,10 +11,10 @@ export default function Warning({ open, handleClose }) {
   return (
     <ThemeProvider theme={dialogTheme}>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>{"⚠️ Modo oscuro en construcción…"}</DialogTitle>
+        <DialogTitle>{"✨ Modo oscuro disponible"}</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            🚀 ¡El modo oscuro aún no ha sido desplegado!!
+            🌙 ¡El modo oscuro ya está disponible! Puedes activarlo o desactivarlo haciendo clic en el icono de brillo en la esquina superior derecha.
           </DialogContentText>
         </DialogContent>
         <DialogActions>

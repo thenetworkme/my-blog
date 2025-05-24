@@ -12,11 +12,11 @@
 }
 .title {
   font-size: 2em;
-  color: rgb(188, 192, 197);
+  color: var(--title-color);
   transition: color 0.3s ease;
 }
 .title:hover {
-  color: rgb(104, 98, 192);
+  color: var(--title-hover);
 }
 .logo {
   width: 30%;
@@ -43,14 +43,15 @@
   border-radius: 9px;
 }
 .a {
-  color: rgb(194, 75, 75);
   text-decoration: none;
-  border-right: 1px dashed rgb(194, 75, 75);
-  padding-right: 4px;
-  margin-right: 5px;
+  color: var(--link-color);
+  margin-right: 16px;
+  border-bottom: 2px solid var(--border-color);
+  display: inline-block;
+  line-height: 1;
 }
 .a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid var(--link-hover);
 }
 .li {
   list-style: none;
@@ -82,7 +83,7 @@
     filter: grayscale(0%);
   }
   .title {
-    color: rgb(104, 98, 192);
+    color: var(--title-color);
   }
 }
 @keyframes bubble {
