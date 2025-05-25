@@ -13,11 +13,20 @@
 }
 .li {
   list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .a {
   text-decoration: none;
   text-decoration: underline;
   color: var(--tech-link-color, black);
+  display: flex;
+  align-items: center;
+}
+
+.a svg {
+  margin-right: 8px;
 }
 .ul {
   padding: 10px 0;
@@ -25,9 +34,29 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 10px;
+  width: 100%;
 }
 .techInfo {
   margin-top: 50px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .li {
+    margin-bottom: 10px;
+  }
+  
+  .li span {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .a {
+    min-width: 120px;
+  }
 }
 .profile {
   width: 120px;

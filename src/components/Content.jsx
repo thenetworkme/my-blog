@@ -2,7 +2,7 @@ import style from './Content.module.css';
 import { Typewriter } from 'react-simple-typewriter';
 import Posts from './Posts';
 import { FaReact, FaGitAlt, FaNpm } from 'react-icons/fa';
-import { SiVercel, SiMaterialui } from 'react-icons/si';
+import { SiVercel, SiMui } from 'react-icons/si';
 
 export default function Content() {
   return (
@@ -44,14 +44,14 @@ export default function Content() {
               <FaReact size={20} />
               React
             </a>
-            : Biblioteca JS para construir interfaces de usuario.
+            <span>: Biblioteca JS para construir interfaces de usuario.</span>
           </li>
           <li className={style.li}>
             <a href="https://git-scm.com/" className={style.a}>
               <FaGitAlt size={20} />
               Git
             </a>
-            : Software de control de versiones.
+            <span>: Software de control de versiones.</span>
           </li>
           <li className={style.li}>
             <a
@@ -61,22 +61,21 @@ export default function Content() {
               <SiVercel size={20} />
               Vercel
             </a>
-            : Plataforma en la nube para desplegar sitios web estáticos.
+            <span>: Plataforma en la nube para desplegar sitios web estáticos.</span>
           </li>
           <li className={style.li}>
             <a href="https://www.npmjs.com/" className={style.a}>
               <FaNpm size={20} />
               npm
             </a>
-            : Gestor de paquetes oficial del framework de código abierto
-            Node.js.
+            <span>: Gestor de paquetes oficial del framework de código abierto Node.js.</span>
           </li>
           <li className={style.li}>
             <a href="https://mui.com/" className={style.a}>
-              <SiMaterialui size={20} />
+              <SiMui size={20} />
               Material UI
             </a>
-            : Biblioteca de componentes de interfaz de usuario para React.
+            <span>: Biblioteca de componentes de interfaz de usuario para React.</span>
           </li>
         </ul>
       </section>

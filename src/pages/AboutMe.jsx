@@ -1,12 +1,12 @@
 import Building from "../components/Building";
 import Content2 from "../components/Content2";
 import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import Header from "../components/Header";
 
 export default function AboutMe() {
   return (
     <main>
-      <NavBar />
+      <Header img={"/images/logo2.png"} />
       <Content2 />
 
       <Footer />
