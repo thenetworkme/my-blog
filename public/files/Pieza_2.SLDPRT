@@ -1,0 +1,37 @@
+<svg width="200" height="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+
+  <!-- Main rectangular base -->
+  <rect x="20" y="30" width="160" height="90" fill="#cccccc" stroke="#333" stroke-width="1"/>
+
+  <!-- Central circle -->
+  <circle cx="100" cy="75" r="25" fill="#aaaaaa" stroke="#333" stroke-width="1"/>
+
+  <!-- Small holes -->
+  <circle cx="40" cy="50" r="5" fill="#888888"/>
+  <circle cx="160" cy="50" r="5" fill="#888888"/>
+  <circle cx="40" cy="100" r="5" fill="#888888"/>
+  <circle cx="160" cy="100" r="5" fill="#888888"/>
+
+  <!-- Dimension lines (simplified) -->
+  <line x1="20" y1="20" x2="180" y2="20" stroke="#555" stroke-width="0.5"/>
+  <text x="95" y="18" font-family="Arial" font-size="8" fill="#333">160mm</text>
+  <line x1="10" y1="30" x2="10" y2="120" stroke="#555" stroke-width="0.5"/>
+  <text x="2" y="78" font-family="Arial" font-size="8" fill="#333" transform="rotate(-90 5 78)">90mm</text>
+
+  <!-- Title -->
+  <text x="50%" y="140" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">PIEZA EJEMPLO 2 - VISTA SUPERIOR</text>
+
+  <!-- Simulated SolidWorks Logo (very simplified) -->
+  <rect x="170" y="5" width="25" height="10" fill="#d90000"/>
+  <text x="172" y="13" font-family="Arial" font-size="6" fill="#fff">SW</text>
+
+  <!-- Metadata (hidden) -->
+  <desc>
+    Archivo: Pieza_2.SLDPRT (Simulacion SVG)
+    Autor: Trae AI
+    Fecha: 2023-10-27
+    Descripcion: Ejemplo de pieza tecnica para descarga.
+  </desc>
+</svg>

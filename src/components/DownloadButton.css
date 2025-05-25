@@ -1,0 +1,236 @@
+.download-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--button-bg-color, #ffcdd2); /* Usar variable CSS con fallback */
+  color: var(--button-text-color, #333);
+  border: 1px solid var(--border-color, transparent);
+  border-radius: 4px;
+  padding: 10px 15px; /* Ajustado para mejor responsividad */
+  cursor: pointer;
+  font-size: 0.9rem; /* Ajustado para mejor responsividad */
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.3s ease;
+margin-bottom: 20px;
+  width: auto; /* Para que se ajuste al contenido */
+  max-width: 100%; /* Para que no exceda el contenedor */
+}
+
+.download-button:hover {
+  background-color: var(--button-hover-bg-color, #ef9a9a);
+}
+
+.download-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.dialog-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dialog-content {
+  background-color: var(--dialog-bg-color, white); /* Usar variable CSS con fallback */
+  color: var(--dialog-text-color, #333);
+  border-radius: 6px;
+  box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 450px; /* Reducido para mejor ajuste en móviles */
+  max-height: 85vh;
+  padding: 20px; /* Ajustado */
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1001; /* Asegurar que esté por encima de otros elementos */
+}
+
+.dialog-title {
+  margin: 0 0 10px 0; /* Ajustado */
+  font-weight: 500;
+  color: var(--dialog-text-color, #333);
+  font-size: 1.2rem; /* Ajustado para responsividad */
+}
+
+.dialog-description {
+  margin-bottom: 15px; /* Ajustado */
+  color: var(--dialog-text-color, #666);
+  font-size: 0.9rem; /* Ajustado para responsividad */
+  line-height: 1.4;
+}
+
+.dialog-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap; /* Para que los botones se apilen en pantallas pequeñas */
+}
+
+.dialog-button {
+  border-radius: 4px;
+  padding: 8px 12px; /* Ajustado */
+  font-size: 0.85rem; /* Ajustado */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  flex-grow: 1; /* Para que los botones se expandan */
+  margin: 5px 0; /* Espacio entre botones en móvil (solo vertical) */
+}
+
+.dialog-button.cancel {
+  background-color: var(--cancel-button-bg-color, transparent);
+  color: var(--cancel-button-text-color, #666);
+  border: 1px solid var(--border-color, #ddd);
+}
+
+.dialog-button.download {
+  background-color: var(--confirm-button-bg-color, #ffcdd2);
+  color: var(--confirm-button-text-color, #333);
+  border: none;
+}
+
+.dialog-button.download:hover {
+  background-color: var(--confirm-button-hover-bg-color, #ef9a9a);
+}
+
+.dialog-close {
+  font-family: inherit;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.dialog-close:hover {
+  background-color: #f5f5f5;
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Estilos para modo oscuro */
+:root[data-theme="dark"] .download-button {
+  background-color: var(--button-bg-color-dark, #555);
+  color: var(--button-text-color-dark, #eee);
+  border-color: var(--border-color-dark, #444);
+}
+
+:root[data-theme="dark"] .download-button:hover {
+  background-color: var(--button-hover-bg-color-dark, #777);
+}
+
+:root[data-theme="dark"] .dialog-content {
+  background-color: var(--dialog-bg-color-dark, #333);
+  color: var(--dialog-text-color-dark, #fff);
+}
+
+:root[data-theme="dark"] .dialog-title {
+  color: var(--dialog-text-color-dark, #fff);
+}
+
+:root[data-theme="dark"] .dialog-description {
+  color: var(--dialog-text-color-dark, #ccc);
+}
+
+:root[data-theme="dark"] .dialog-button.cancel {
+  background-color: var(--cancel-button-bg-color-dark, #444);
+  color: var(--cancel-button-text-color-dark, #ccc);
+  border-color: var(--border-color-dark, #555);
+}
+
+:root[data-theme="dark"] .dialog-button.download {
+  background-color: var(--confirm-button-bg-color-dark, #ef9a9a);
+  color: var(--confirm-button-text-color-dark, #333);
+}
+
+:root[data-theme="dark"] .dialog-close {
+  color: var(--dialog-text-color-dark, #ccc);
+  border-color: var(--border-color-dark, #555);
+}
+
+:root[data-theme="dark"] .dialog-close:hover {
+  background-color: #444;
+}
+
+/* Media Queries para responsividad del botón y diálogo */
+@media (max-width: 768px) {
+  .download-button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+  .dialog-content {
+    padding: 15px;
+  }
+  .dialog-title {
+    font-size: 1.1rem;
+  }
+  .dialog-description {
+    font-size: 0.85rem;
+  }
+  .dialog-button {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+  .download-button .download-icon { /* Ajustar icono en móvil */
+    width: 14px;
+    height: 14px;
+  }
+  .dialog-content {
+    width: 95vw;
+    padding: 10px;
+  }
+  .dialog-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .dialog-description {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  .dialog-buttons {
+    flex-direction: column; /* Apilar botones verticalmente */
+    gap: 8px;
+  }
+  .dialog-button {
+    width: 100%; /* Botones ocupan todo el ancho */
+    margin: 5px 0; /* Resetear margen para apilamiento */
+  }
+}

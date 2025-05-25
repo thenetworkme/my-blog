@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Fondo del dibujo técnico -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Cuadrícula de fondo -->
+  <g stroke="#ddd" stroke-width="1">
+    <!-- Líneas horizontales -->
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+    
+    <!-- Líneas verticales -->
+    <line x1="100" y1="0" x2="100" y2="600" />
+    <line x1="200" y1="0" x2="200" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="400" y1="0" x2="400" y2="600" />
+    <line x1="500" y1="0" x2="500" y2="600" />
+    <line x1="600" y1="0" x2="600" y2="600" />
+    <line x1="700" y1="0" x2="700" y2="600" />
+  </g>
+  
+  <!-- Pieza principal -->
+  <g transform="translate(400, 300)">
+    <!-- Base rectangular -->
+    <rect x="-150" y="-100" width="300" height="200" fill="none" stroke="#333" stroke-width="2" />
+    
+    <!-- Círculo central -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#333" stroke-width="2" />
+    
+    <!-- Agujeros pequeños -->
+    <circle cx="-100" cy="-50" r="15" fill="none" stroke="#333" stroke-width="2" />
+    <circle cx="100" cy="-50" r="15" fill="none" stroke="#333" stroke-width="2" />
+    <circle cx="-100" cy="50" r="15" fill="none" stroke="#333" stroke-width="2" />
+    <circle cx="100" cy="50" r="15" fill="none" stroke="#333" stroke-width="2" />
+    
+    <!-- Líneas de dimensión -->
+    <g stroke="#0066cc" stroke-width="1">
+      <!-- Dimensión horizontal -->
+      <line x1="-150" y1="-120" x2="150" y2="-120" />
+      <line x1="-150" y1="-125" x2="-150" y2="-115" />
+      <line x1="150" y1="-125" x2="150" y2="-115" />
+      <text x="0" y="-130" text-anchor="middle" font-family="Arial" font-size="12" fill="#0066cc">300</text>
+      
+      <!-- Dimensión vertical -->
+      <line x1="170" y1="-100" x2="170" y2="100" />
+      <line x1="165" y1="-100" x2="175" y2="-100" />
+      <line x1="165" y1="100" x2="175" y2="100" />
+      <text x="185" y="0" text-anchor="middle" font-family="Arial" font-size="12" fill="#0066cc" transform="rotate(90, 185, 0)">200</text>
+      
+      <!-- Dimensión del círculo -->
+      <line x1="0" y1="0" x2="50" y2="0" />
+      <line x1="60" y1="0" x2="80" y2="0" />
+      <text x="65" y="-10" text-anchor="middle" font-family="Arial" font-size="12" fill="#0066cc">Ø100</text>
+    </g>
+  </g>
+  
+  <!-- Título y metadatos -->
+  <g font-family="Arial" font-size="14" fill="#333">
+    <text x="50" y="50" font-weight="bold">PIEZA EJEMPLO - SOLIDWORKS</text>
+    <text x="50" y="70">Escala: 1:2</text>
+    <text x="50" y="90">Unidades: mm</text>
+    <text x="50" y="110">Autor: Rayner Rodríguez</text>
+    <text x="50" y="130">Fecha: 2023</text>
+  </g>
+  
+  <!-- Cuadro de información -->
+  <g transform="translate(600, 500)">
+    <rect x="0" y="0" width="150" height="80" fill="none" stroke="#333" stroke-width="1" />
+    <line x1="0" y1="20" x2="150" y2="20" stroke="#333" stroke-width="1" />
+    <text x="75" y="15" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">INFORMACIÓN</text>
+    <text x="10" y="35" font-family="Arial" font-size="10" fill="#333">Material: Aluminio</text>
+    <text x="10" y="50" font-family="Arial" font-size="10" fill="#333">Peso: 0.5 kg</text>
+    <text x="10" y="65" font-family="Arial" font-size="10" fill="#333">Rev: A</text>
+  </g>
+  
+  <!-- Logo de SolidWorks (simulado) -->
+  <g transform="translate(700, 50)">
+    <rect x="0" y="0" width="80" height="30" rx="5" fill="#e51937" />
+    <text x="40" y="20" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="white">SOLIDWORKS</text>
+  </g>
+</svg>
