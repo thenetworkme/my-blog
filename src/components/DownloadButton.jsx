@@ -23,7 +23,7 @@ export default function DownloadButton({ files }) {
       <Dialog.Trigger asChild>
         <button className="download-button">
           <DownloadIcon className="download-icon" />
-          <span>Descargar SolidWorks</span>
+          <span>Descargar Piezas de SolidWorks</span>
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
